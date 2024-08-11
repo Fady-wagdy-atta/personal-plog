@@ -1,0 +1,52 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.334);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 60px;
+    margin-top: 10px;
+}
+.my-blog{
+    color: aliceblue;
+    font-size: 3rem;
+}
+.info-bar {
+    display: flex;
+    gap: 2rem;
+}
+.info-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+.info-bar a:hover {
+    color:rgb(54, 235, 255);
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    .my-blog {
+        font-size: 2rem;
+    }
+    .info-bar {
+        display: flex;
+        gap: 0.2rem;
+        flex-direction: column;
+    }
+
+
+}
